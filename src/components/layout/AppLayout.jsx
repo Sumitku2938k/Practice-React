@@ -10,7 +10,7 @@ const AppLayout = () => {
                     <h2 className="text-sm text-gray-400">Smart Tourist Safety</h2>
                     <h1 className="text-xl font-bold">Admin Panel</h1>
                 </div>
-                <nav className="space-y-2 mt-1">
+                <nav className="space-y-2 mt-3">
                     <NavLink to="/" className={({ isActive }) => `flex items-center gap-3 px-4 py-2 rounded-md transition ${isActive ? "bg-green-700 " : "hover:bg-green-900"}`}>
                         <LayoutDashboard size={18} />
                         <span>Dashboard</span>
@@ -44,7 +44,7 @@ const AppLayout = () => {
                     </select>
                 </div>
             </aside>
-            <main>
+            <main className="bg-gray-950 text-white p-4">
                 <Outlet />
             </main>
         </div>
