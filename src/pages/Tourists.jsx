@@ -1,10 +1,13 @@
 import React from 'react';
+import DashboardHeader from '../components/dashboard/DashboardHeader';
+import TouristTable from '../components/tourists/TouristTable';
 
-const Tourists = () => {
+const Tourists = ({tourists}) => {
     return (
-        <div>
-            Tourists
-        </div>
+        <>
+            <DashboardHeader />
+            <TouristTable tourists={tourists}/>
+        </>
     );
 }
 

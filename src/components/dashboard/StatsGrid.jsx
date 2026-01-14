@@ -3,7 +3,7 @@ import StatCard from "./StatCard";
 
 const StatsGrid = ({ stats }) => {
     return (
-        <div className="grid grid-cols-[1fr_1fr_1fr_1fr_320px] gap-4 mb-4">
+        <div className="grid grid-cols-[1fr_1fr_1fr_1fr_320px] gap-4 mb-4 ">
             <StatCard label="Total Tourists" value={stats.total} color="text-white" />
             <StatCard label="Active Alerts" value={stats.active} color="text-red-400" />
             <StatCard label="Acknowledged" value={stats.ack} color="text-blue-400" />

@@ -7,7 +7,7 @@ const Dashboard = ({ tourists, alerts, zones }) => {
     const stats = {
         total: tourists.length,
         active: alerts.filter(a => a.status === "active").length,
-        ack: alerts.filter(a => a.status === "ack").length,
+        ack: alerts.filter(a => a.status === "acknowledged").length,
         dispatch: alerts.filter(a => a.status === "dispatch").length
     };
     // const stats = {
