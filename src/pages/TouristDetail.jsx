@@ -1,9 +1,10 @@
 import { useParams, useNavigate } from "react-router-dom";
 import DashboardHeader from '../components/dashboard/DashboardHeader';
 import { User } from 'lucide-react';
+import AlertHistory from "../components/tourists/AlertHistory";
 
-const TouristDetail = ({ tourists }) => {
-    const { touristId } = useParams();
+const TouristDetail = ({ tourists, alerts }) => {
+    const { touristId } = useParams(); // example -> returns T-1001
     const navigate = useNavigate();
 
     const tourist = tourists.find(t => t.id === touristId);
@@ -48,23 +49,7 @@ const TouristDetail = ({ tourists }) => {
                     {/* ALERT HISTORY */}
                     <div className="bg-gray-900 border border-gray-800 rounded-xl p-4">
                         <h3 className="text-sm font-semibold mb-3">Alert History</h3>
-                        <div className="space-y-3">
-                            <div className="flex items-center justify-between bg-gray-800/60 px-4 py-2 rounded-md">
-                                <div>
-                                    <p className="text-sm font-medium">SOS – A-T-1001-1</p>
-                                    <p className="text-xs text-gray-400">13/1/2026, 3:55:41 am</p>
-                                </div>
-                                <span className="text-xs px-2 py-1 rounded-full bg-red-600/20 text-red-400">active</span>
-                            </div>
-
-                            <div className="flex items-center justify-between bg-gray-800/60 px-4 py-2 rounded-md">
-                                <div>
-                                    <p className="text-sm font-medium">Geo-fence – A-T-1001-2</p>
-                                    <p className="text-xs text-gray-400">12/1/2026, 3:55:41 am</p>
-                                </div>
-                                <span className="text-xs px-2 py-1 rounded-full bg-green-600/20 text-green-400">acknowledged</span>
-                            </div>
-                        </div>
+                        <AlertHistory alerts={alerts.filter(a => a.touristId === tourist.id)} />
                     </div>
                 </div>
             </div>

@@ -200,25 +200,184 @@ export const tourists = [
 ]; 
 
 export const alerts = [
+    // ===== T-1001 =====
     {
-        id: "A-1",
+        id: "A-T-1001-1",
         type: "SOS",
         status: "active",
-        name: "Aarav Sharma",
         touristId: "T-1001",
-        location: { lat: 28.61, lng: 77.21 },
-        time: "11/1/2026, 11:58 PM",
+        time: "13/1/2026, 3:55:41 am",
     },
     {
-        id: "A-2",
+        id: "A-T-1001-2",
         type: "Geo-fence",
         status: "acknowledged",
-        name: "Emily Johnson",
+        touristId: "T-1001",
+        time: "12/1/2026, 3:55:41 am",
+    },
+
+    // ===== T-1002 =====
+    {
+        id: "A-T-1002-1",
+        type: "Geo-fence",
+        status: "acknowledged",
         touristId: "T-1002",
-        location: { lat: 28.53, lng: 77.39 },
-        time: "10/1/2026, 11:58 PM",
+        time: "11/1/2026, 11:58 PM",
+    },
+
+    // ===== T-1003 =====
+    {
+        id: "A-T-1003-1",
+        type: "SOS",
+        status: "active",
+        touristId: "T-1003",
+        time: "14/1/2026, 1:10:22 am",
+    },
+    {
+        id: "A-T-1003-2",
+        type: "Geo-fence",
+        status: "acknowledged",
+        touristId: "T-1003",
+        time: "13/1/2026, 10:22:10 pm",
+    },
+
+    // ===== T-1004 =====
+    {
+        id: "A-T-1004-1",
+        type: "Geo-fence",
+        status: "acknowledged",
+        touristId: "T-1004",
+        time: "14/1/2026, 9:40:18 am",
+    },
+
+    // ===== T-1005 =====
+    {
+        id: "A-T-1005-1",
+        type: "Geo-fence",
+        status: "acknowledged",
+        touristId: "T-1005",
+        time: "11/1/2026, 6:30:55 pm",
+    },
+
+    // ===== T-1006 =====
+    {
+        id: "A-T-1006-1",
+        type: "SOS",
+        status: "active",
+        touristId: "T-1006",
+        time: "14/1/2026, 10:46:10 am",
+    },
+    {
+        id: "A-T-1006-2",
+        type: "Geo-fence",
+        status: "acknowledged",
+        touristId: "T-1006",
+        time: "13/1/2026, 8:12:33 pm",
+    },
+
+    // ===== T-1007 =====
+    {
+        id: "A-T-1007-1",
+        type: "Geo-fence",
+        status: "acknowledged",
+        touristId: "T-1007",
+        time: "10/1/2026, 7:25:19 pm",
+    },
+
+    // ===== T-1008 =====
+    {
+        id: "A-T-1008-1",
+        type: "Geo-fence",
+        status: "acknowledged",
+        touristId: "T-1008",
+        time: "14/1/2026, 11:11:10 am",
+    },
+
+    // ===== T-1009 =====
+    {
+        id: "A-T-1009-1",
+        type: "Geo-fence",
+        status: "acknowledged",
+        touristId: "T-1009",
+        time: "14/1/2026, 10:26:10 am",
+    },
+    {
+        id: "A-T-1009-2",
+        type: "SOS",
+        status: "active",
+        touristId: "T-1009",
+        time: "14/1/2026, 11:02:44 am",
+    },
+
+    // ===== T-1010 =====
+    {
+        id: "A-T-1010-1",
+        type: "Geo-fence",
+        status: "acknowledged",
+        touristId: "T-1010",
+        time: "13/1/2026, 11:21:10 am",
+    },
+
+    // ===== T-1011 =====
+    {
+        id: "A-T-1011-1",
+        type: "Geo-fence",
+        status: "acknowledged",
+        touristId: "T-1011",
+        time: "14/1/2026, 11:01:10 am",
+    },
+
+    // ===== T-1012 =====
+    {
+        id: "A-T-1012-1",
+        type: "Geo-fence",
+        status: "acknowledged",
+        touristId: "T-1012",
+        time: "14/1/2026, 10:36:10 am",
+    },
+    {
+        id: "A-T-1012-2",
+        type: "SOS",
+        status: "active",
+        touristId: "T-1012",
+        time: "14/1/2026, 11:20:05 am",
+    },
+
+    // ===== T-1013 =====
+    {
+        id: "A-T-1013-1",
+        type: "Geo-fence",
+        status: "acknowledged",
+        touristId: "T-1013",
+        time: "12/1/2026, 6:45:50 pm",
+    },
+
+    // ===== T-1014 =====
+    {
+        id: "A-T-1014-1",
+        type: "Geo-fence",
+        status: "acknowledged",
+        touristId: "T-1014",
+        time: "14/1/2026, 10:05:30 am",
+    },
+
+    // ===== T-1015 =====
+    {
+        id: "A-T-1015-1",
+        type: "SOS",
+        status: "active",
+        touristId: "T-1015",
+        time: "14/1/2026, 4:40:11 am",
+    },
+    {
+        id: "A-T-1015-2",
+        type: "Geo-fence",
+        status: "acknowledged",
+        touristId: "T-1015",
+        time: "13/1/2026, 9:18:42 pm",
     },
 ];
+
 
 export const zones = [
     {
