@@ -203,6 +203,7 @@ export const alerts = [
     // ===== T-1001 =====
     {
         id: "A-T-1001-1",
+        name: "Aarav Sharma",
         type: "SOS",
         status: "active",
         touristId: "T-1001",
@@ -210,6 +211,7 @@ export const alerts = [
     },
     {
         id: "A-T-1001-2",
+        name: "Aarav Sharma",
         type: "Geo-fence",
         status: "acknowledged",
         touristId: "T-1001",
@@ -219,6 +221,7 @@ export const alerts = [
     // ===== T-1002 =====
     {
         id: "A-T-1002-1",
+        name: "Emily Johnson",
         type: "Geo-fence",
         status: "acknowledged",
         touristId: "T-1002",
@@ -228,6 +231,7 @@ export const alerts = [
     // ===== T-1003 =====
     {
         id: "A-T-1003-1",
+        name: "Rahul Verma",
         type: "SOS",
         status: "active",
         touristId: "T-1003",
@@ -235,6 +239,7 @@ export const alerts = [
     },
     {
         id: "A-T-1003-2",
+        name: "Rahul Verma",
         type: "Geo-fence",
         status: "acknowledged",
         touristId: "T-1003",
@@ -244,6 +249,7 @@ export const alerts = [
     // ===== T-1004 =====
     {
         id: "A-T-1004-1",
+        name: "Zoya Khan",
         type: "Geo-fence",
         status: "acknowledged",
         touristId: "T-1004",
@@ -253,6 +259,7 @@ export const alerts = [
     // ===== T-1005 =====
     {
         id: "A-T-1005-1",
+        name: "Liam Smith",
         type: "Geo-fence",
         status: "acknowledged",
         touristId: "T-1005",
@@ -262,6 +269,7 @@ export const alerts = [
     // ===== T-1006 =====
     {
         id: "A-T-1006-1",
+        name: "Aisha Patel",
         type: "SOS",
         status: "active",
         touristId: "T-1006",
@@ -269,6 +277,7 @@ export const alerts = [
     },
     {
         id: "A-T-1006-2",
+        name: "Aisha Patel",
         type: "Geo-fence",
         status: "acknowledged",
         touristId: "T-1006",
@@ -278,6 +287,7 @@ export const alerts = [
     // ===== T-1007 =====
     {
         id: "A-T-1007-1",
+        name: "Noah Williams",
         type: "Geo-fence",
         status: "acknowledged",
         touristId: "T-1007",
@@ -287,6 +297,7 @@ export const alerts = [
     // ===== T-1008 =====
     {
         id: "A-T-1008-1",
+        name: "Priya Gupta",
         type: "Geo-fence",
         status: "acknowledged",
         touristId: "T-1008",
@@ -296,6 +307,7 @@ export const alerts = [
     // ===== T-1009 =====
     {
         id: "A-T-1009-1",
+        name: "Ethan Chen",
         type: "Geo-fence",
         status: "acknowledged",
         touristId: "T-1009",
@@ -303,6 +315,7 @@ export const alerts = [
     },
     {
         id: "A-T-1009-2",
+        name: "Ethan Chen",
         type: "SOS",
         status: "active",
         touristId: "T-1009",
@@ -312,6 +325,7 @@ export const alerts = [
     // ===== T-1010 =====
     {
         id: "A-T-1010-1",
+        name: "Sofia Rodriguez",
         type: "Geo-fence",
         status: "acknowledged",
         touristId: "T-1010",
@@ -321,6 +335,7 @@ export const alerts = [
     // ===== T-1011 =====
     {
         id: "A-T-1011-1",
+        name: "Karan Mehta",
         type: "Geo-fence",
         status: "acknowledged",
         touristId: "T-1011",
@@ -330,6 +345,7 @@ export const alerts = [
     // ===== T-1012 =====
     {
         id: "A-T-1012-1",
+        name: "Mia Martinez",
         type: "Geo-fence",
         status: "acknowledged",
         touristId: "T-1012",
@@ -337,6 +353,7 @@ export const alerts = [
     },
     {
         id: "A-T-1012-2",
+        name: "Mia Martinez",
         type: "SOS",
         status: "active",
         touristId: "T-1012",
@@ -346,6 +363,7 @@ export const alerts = [
     // ===== T-1013 =====
     {
         id: "A-T-1013-1",
+        name: "Arjun Singh",
         type: "Geo-fence",
         status: "acknowledged",
         touristId: "T-1013",
@@ -355,6 +373,7 @@ export const alerts = [
     // ===== T-1014 =====
     {
         id: "A-T-1014-1",
+        name: "Lucas Brown",
         type: "Geo-fence",
         status: "acknowledged",
         touristId: "T-1014",
@@ -364,6 +383,7 @@ export const alerts = [
     // ===== T-1015 =====
     {
         id: "A-T-1015-1",
+        name: "Ananya Iyer",
         type: "SOS",
         status: "active",
         touristId: "T-1015",
@@ -371,6 +391,7 @@ export const alerts = [
     },
     {
         id: "A-T-1015-2",
+        name: "Ananya Iyer",
         type: "Geo-fence",
         status: "acknowledged",
         touristId: "T-1015",

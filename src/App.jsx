@@ -19,7 +19,7 @@ const App = () => {
             <Route index element={<Dashboard tourists={tourists} alerts={alerts} zones={zones} />} />
             <Route path="tourists" element={<Tourist tourists={tourists} />} />
             <Route path="tourists/:touristId" element={<TouristDetail tourists={tourists} alerts={alerts} />} />
-            <Route path="alerts" element={<Alerts />} />
+            <Route path="alerts" element={<Alerts alerts={alerts}/>} />
             <Route path="reports" element={<Reports />} />
             <Route path="riskyzones" element={<RiskyZones />} />
           </Route>

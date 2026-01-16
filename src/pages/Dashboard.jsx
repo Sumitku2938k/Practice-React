@@ -10,12 +10,7 @@ const Dashboard = ({ tourists, alerts, zones }) => {
         ack: alerts.filter(a => a.status === "acknowledged").length,
         dispatch: alerts.filter(a => a.status === "dispatch").length
     };
-    // const stats = {
-    //     total: 15,
-    //     active: 20,
-    //     ack: 10,
-    //     display: 10,
-    // }
+    
     return (
         <>
             <DashboardHeader />
