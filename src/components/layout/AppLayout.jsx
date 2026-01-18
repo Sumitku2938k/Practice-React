@@ -6,10 +6,16 @@ const AppLayout = () => {
     return (
         <div className="min-h-screen grid grid-cols-[240px_1fr]">
             <aside className="bg-gray-900 text-white p-4 h-screen sticky top-0 flex flex-col overflow-y-auto">
-                <div className="flex items-center flex-col border-b pb-3">
-                    <h2 className="text-sm text-gray-400">Smart Tourist Safety</h2>
-                    <h1 className="text-xl font-bold">Admin Panel</h1>
+                <div className="flex items-center gap-3 border-b border-gray-600 pb-3">
+                    <div className="p-2 bg-blue-900/40 border border-blue-900 rounded-md w-8 h-8 flex items-center justify-center">
+                        {/* icon ya logo yahan */}
+                    </div>
+                    <div className="flex flex-col leading-tight">
+                        <h2 className="text-sm text-gray-400">Smart Tourist Safety</h2>
+                        <h1 className="text-xl font-bold">Admin Panel</h1>
+                    </div>
                 </div>
+
                 <nav className="space-y-2 mt-3">
                     <NavLink to="/" className={({ isActive }) => `flex items-center gap-3 px-4 py-2 rounded-md transition ${isActive ? "bg-blue-900/40 text-blue-500  border border-blue-900" : "hover:bg-green-900/50"}`}>
                         <LayoutDashboard size={18} />
