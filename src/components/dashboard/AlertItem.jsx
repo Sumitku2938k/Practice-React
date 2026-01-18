@@ -6,7 +6,8 @@ const statusStyles = {
     dispatched: "border-green-700 text-green-400",
 };
 
-const AlertItem = ({ alert }) => {
+const AlertItem = ({ alert, updateAlertStatus}) => {
+
     return (
         <div className="bg-gray-950 border border-gray-800 rounded-xl p-4 flex flex-col justify-between min-h-40">
         
@@ -29,12 +30,12 @@ const AlertItem = ({ alert }) => {
 
             {/* ACTIONS */}
             <div className="flex gap-2 mt-4">
-                <button className="flex-1 text-xs bg-gray-800 py-2 rounded-md flex items-center justify-center gap-1 hover:bg-gray-900">
+                <button className="flex-1 text-xs bg-gray-800 py-2 rounded-md hover:cursor-pointer flex items-center justify-center gap-1 hover:bg-gray-900" onClick={() => updateAlertStatus(alert.id, "acknowledged")}>
                     <CircleCheck size={14} />
                     Acknowledge
                 </button>
 
-                <button className="flex-1 text-xs bg-blue-600 py-2 rounded-md flex items-center justify-center gap-1 hover:bg-blue-700">
+                <button className="flex-1 text-xs bg-blue-600 py-2 rounded-md hover:cursor-pointer flex items-center justify-center gap-1 hover:bg-blue-700" onClick={() => updateAlertStatus(alert.id, "dispatched")}>
                     <Send size={14} />
                     Dispatch Police
                 </button>

@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import AlertGrid from '../components/alerts/AlertGrid';
 import AlertFilter from '../components/alerts/AlertFilter';
 
-const Alerts = ({alerts}) => {
+const Alerts = ({alerts, updateAlertStatus}) => {
     const [status, setStatus] = useState("all");
 
     const filteredAlerts = useMemo(() => {
@@ -24,7 +24,7 @@ const Alerts = ({alerts}) => {
             </div>
 
             <div className="mt-6">
-                <AlertGrid alerts={filteredAlerts} />
+                <AlertGrid alerts={filteredAlerts} updateAlertStatus={updateAlertStatus}/>
             </div>
         </>
     );

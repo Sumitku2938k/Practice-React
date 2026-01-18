@@ -9,17 +9,24 @@ import Reports from "./pages/Reports";
 import RiskyZones from "./pages/RiskyZones";
 import AppLayout from "./components/layout/AppLayout";
 import { tourists, alerts, zones } from "./data/dummyData";
+import { useState } from "react";
 
 const App = () => {
+  const [alertList, setAlertList] = useState(alerts);
+
+  const updateAlertStatus = (alertId, newStatus) => {
+    setAlertList(prev => prev.map(a => a.id === alertId ? { ...a, status: newStatus } : a) );
+  };
+  
   return (
     <>
       <Router>
         <Routes>
           <Route path="/" element={<AppLayout />}>
-            <Route index element={<Dashboard tourists={tourists} alerts={alerts} zones={zones} />} />
+            <Route index element={<Dashboard tourists={tourists} alerts={alertList} zones={zones} updateAlertStatus={updateAlertStatus}/>} />
             <Route path="tourists" element={<Tourist tourists={tourists} />} />
-            <Route path="tourists/:touristId" element={<TouristDetail tourists={tourists} alerts={alerts} />} />
-            <Route path="alerts" element={<Alerts alerts={alerts}/>} />
+            <Route path="tourists/:touristId" element={<TouristDetail tourists={tourists} alerts={alertList} />} />
+            <Route path="alerts" element={<Alerts alerts={alertList} updateAlertStatus={updateAlertStatus}/>} />
             <Route path="reports" element={<Reports />} />
             <Route path="riskyzones" element={<RiskyZones />} />
           </Route>
